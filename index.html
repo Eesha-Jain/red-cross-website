@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Your Website Title</title>
 
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Cross Website</title>
 
-    </head>
-    <body>
-        <nav id="navbar">
-            <a class="nav-link" href="index.html"> Home </a>
-            <a class="nav-link" href="volunteers.html"> Fundraisers and Volunteering </a>
-            <a class="nav-link" href="about.html"> About Us </a>
-        </nav>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" defer></script>
 
-        <!--add other code here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-        <footer>
-            <p>&copy; 2024 Red Cross Club Website </p>
-            <p> made by IHS Girls Who Code</p>
-        </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-    </body>
+<body>
+    <nav id="navbar">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Red Cross Logo" class="logo"></a>
+        </div>
+        <div>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="volunteers.html">Fundraisers and Volunteering</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Red Cross Club Name -->
+        <div class="header">
+            <div class="text">
+                <h1>Interlake Red Cross</h1>
+                <h3>Saving disasters around the world. Promoting high school volunteers to service the community.</h3>
+                <a href="current_projects.html" class="button">Current Projects</a>
+            </div>
+        </div>
+
+        <!-- Introduction + Mission Statement -->
+        <div class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the Red Cross Club. Our mission is to provide relief to victims of disasters and help people
+                prevent, prepare for, and respond to emergencies.</p>
+            <br />
+            <div class="row mission">
+                <div class="col"><p><i class="fa-solid fa-calendar"></i></p><p class="title">Every Wednesday</p></div>
+                <div class="col"><p><i class="fa-solid fa-clock"></i></p><p class="title">3:00 PM</p></div>
+                <div class="col"><p><i class="fa-solid fa-location-dot"></i></p><p class="title">Room 101</p></div>
+            </div>
+        </div>
+
+        <!-- Red Cross YouTube Video embedded -->
+        <div class="section">
+            <h2>Our Work</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- Sign-up for E-mails -->
+        <div class="section">
+            <h2>Sign Up for E-mails</h2>
+            <form>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Club Membership Form -->
+        <div class="section">
+            <h2>Join Our Club</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <button type="submit" class="button">Join</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Red Cross Club Website</p>
+        <p>made by IHS Girls Who Code</p>
+    </footer>
+</body>
+
 </html>
